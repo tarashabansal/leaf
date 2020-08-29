@@ -1,0 +1,261 @@
+body
+{
+    
+    
+}
+
+.leftcol
+{
+   width:40%;
+   height: 550px;
+   position: absolute;
+   margin-left: 129px;
+   margin-top: 68px; 
+   font-family: 'Montserrat', sans-serif;
+   float : left;
+   transition: width 2s, height 4s;
+}
+.donation-container {
+  width: 40%;
+  margin-top: 64px;
+  margin-right: 84px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: uppercase;
+  float: right;
+}
+
+.donation-box {
+  width: 500px;
+  height: 520px;
+  background-color:  #dcedc1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+  transition: all 0.15s ease-out;
+}
+
+.donation-box .title {
+  background-color: #1b1919;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+
+.donation-box .fields {
+  width: 59%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+
+.donation-box .fields input {
+  width: 90%;
+  font-size: 17px;
+  padding: 10px;
+  border-width: 0px;
+  color: #5C5C5C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 35px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+   color: #cdcdcd;
+   font-size: 15px;
+
+}
+
+
+.donation-box .amount {
+  width: 29%;
+  
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+
+.donation-box .amount .bt input {
+
+      height: 23%;
+    width: 90%;
+    background-color: #899857;
+    margin-bottom: 25px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24;
+    cursor: pointer;
+    size: 26px;
+    border: 0px;
+  transition: 200ms background-color;
+}
+
+
+
+.switch {
+  position: absolute;
+  top: 280px;
+  left: 15px;
+  margin: 20px auto;
+  height: 26px;
+  width: 53.0%;
+  background: aliceblue;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 49%;
+  line-height: 26px;
+  font-size: 11px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+    background-color: aliceblue;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+        background-color: aliceblue;
+}
+
+.switch-input {
+  display: none;
+        
+
+}
+
+.donation-box .donate-button input {
+  background-color: #1b1919;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  bottom: 0px;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  background-color: #899857;
+  
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 114px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 49%;
+  height: 22px;
+  background: #bbded6;
+  background-color: #2c786c;
+    color: black;
+  
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.checkboxes {
+      position: relative;
+    top: 350px;
+    left: 10px;
+    
+}
+
+.checkboxes p {
+  position: relative;
+  top: -8px;
+  font-size: 13px;
+  color: gray;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #C1D82F;
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+  
+}
+
+.checkbox:checked {
+  background-color: #C1D82F;
+  border: 1px solid #C1D82F;
+  color: white;
+}
+
+.checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: white;
+}
+
+.confirm {
+  display: none;
+  position: absolute;
+  top: 335px;
+  left: 15px;
+  right: 15px;
+  font-size: 16px;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+

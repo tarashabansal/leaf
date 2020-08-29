@@ -1,0 +1,73 @@
+<script type="text/javascript">
+  function cod(){
+    window .location.replace("cod.html");
+  }
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="titi">
+  
+
+</div>
+
+<div class="wrapper">
+  <div class="checkout_wrapper">
+    <div class="product_info">
+      <img src="lf.jpg" alt="product">
+      <div class="content">
+        
+       
+      </div>
+    </div>
+    <div class="checkout_form">
+      <p>Payment Section</p>
+      <form >
+      <div class="details">
+        <div class="section_no">
+          <input type="number" placeholder="Card Number"required>
+        </div>
+<br>
+        <div class="section">
+          <input type="text" placeholder="Cardholder Name"required>
+        </div>
+
+
+        <div class="section_no">
+        <input type="number" placeholder="CVV"required>
+      </div>
+      <br>
+        <div class="section_mon">
+        <select name='expireMM' id='expireMM'>
+    <option value=''>Month</option>
+    <option value='01'>January</option>
+    <option value='02'>February</option>
+    <option value='03'>March</option>
+    <option value='04'>April</option>
+    <option value='05'>May</option>
+    <option value='06'>June</option>
+    <option value='07'>July</option>
+    <option value='08'>August</option>
+    <option value='09'>September</option>
+    <option value='10'>October</option>
+    <option value='11'>November</option>
+    <option value='12'>December</option>
+</select> 
+<select name='expireYY' id='expireYY'>
+    <option value=''>Year</option>
+    <option value='10'>2020</option>
+    <option value='11'>2021</option>
+    <option value='12'>2022</option>
+</select> 
+        </div>
+
+     
+        
+      <input type="submit" name="xyz" value=PAY class="btn" onclick="cod()">
+        
+     
+     
+     
+       </div>
+ </form>
+        </div>
+  </div>
+</div>

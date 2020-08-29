@@ -1,0 +1,108 @@
+/*
+html{
+    background-image: url("bg7.jpg");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
+*/
+    
+    
+
+    
+.card {
+  position: relative;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: :20%;
+    margin-top: 10%;
+              
+    }
+        
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+.middle {
+    border: 2px solid;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    background-color:rgba(255, 255, 255, .1);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border-color: black !important;
+
+}
+  
+        
+    }
+
+.card a:any-link{
+    color: black;
+}
+
+.card:hover .image {
+  opacity: 0.3;
+   
+    
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:rgba(255, 255, 255, .1);
+  color:black;
+  font-size: 100%;
+  padding: 10% 20%;
+    align-content: left;
+}
+    
+        
+            
+        .newrow {
+            margin-top: 3em;
+            display: grid;
+            grid-gap: 1em;
+       }
+
+    @media screen and (orientation: landscape) {
+        .newrow {
+            grid-template-columns: repeat(3, 1fr); 
+        }
+    }
+    
+    @media screen and (orientation: portrait) {
+        .newrow {
+            grid-template-columns: repeat(1, 1fr); 
+        }
+    }
+
+
+/*
+    .container{
+        float: left;
+        position: absolute;
+        left: 0px;
+        top:325px;
+        width: 395px;
+        z-index: 1000;
+        background-color:rgba(255, 255, 255, .6);
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+        border: 2px solid;
+    }
+*/
+

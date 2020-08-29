@@ -1,0 +1,30 @@
+<?php
+$db=mysqli_connect("localhost","tarasha","my7727894449","leaf");
+                $get_plants="select * from products ";
+                $display=mysqli_query($con,$get_plants);
+                while($row_products=mysqli_fetch_array($display)){
+                    $product_name=$row_products['product_name'];
+                    $price=$row_products['price'];
+                    $image=$row_products['image'];
+                    echo"
+                    
+                    <div class='col-md-12'>
+                <div class='card'>
+                    <a  href='desc.php?image=$image'>  
+                        <img src='project%20products/$image' alt='Avatar' class='image' style='width:100%'>
+                        <div class='middle'>
+                            <div class='text'>
+                                <h4><b>$product_name</b></h4>
+                                <p>$price</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+                    
+                    ";
+                }
+                
+                
+                ?>
